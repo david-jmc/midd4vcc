@@ -8,7 +8,7 @@ The middleware consists of two main components:
 
 ---
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 Before compiling, you must install the development dependencies and the MQTT communication broker.
 
@@ -16,21 +16,25 @@ Before compiling, you must install the development dependencies and the MQTT com
 On Ubuntu/Debian, run:
 ```bash
 sudo apt update
-sudo apt install -y build-essential cmake libpaho-mqtt-dev mosquitto mosquitto-clients```
+sudo apt install -y build-essential cmake libpaho-mqtt-dev mosquitto mosquitto-clients
+```
 
 ### 2. MQTT Broker
 The MQTT Broker, e.g., mosquitto service must be active to enable communication between the nodes and the server:
 ```bash
 sudo systemctl enable mosquitto
-sudo systemctl start mosquitto```
+sudo systemctl start mosquitto
+```
 
 ## Compilation
 The project uses CMake to manage dependencies. Navigate to the project root folder:
 ```bash
 mkdir build && cd build
 cmake ..
-make```
+make
+```
 
 This will generate the Midd4VCServer binary executable, run the follows command:
 ```bash
-./Midd4VCServer```
+./Midd4VCServer
+```
